@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Discord | Your Place to Talk and Hang Out</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+          },
+          extend: {
+            colors: {
+              myblue: "#404EED",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <nav class="relative mx-auto p-5 h-[20%] bg-myblue">
+      <div class="flex items-center justify-around">
+        <div class="w-50">
+          <img
+            class="h-4 mr-2 sm:h-9"
+            src="./Assets/images/logo.png"
+            alt="logo"
+          />
+        </div>
+        <div
+          class="hidden md:flex space-x-6 font-sans font-semibold text-sm text-white"
+        >
+          <a href="#">Download</a>
+          <a href="#">Nitro</a>
+          <a href="#">Discover</a>
+          <a href="#">Safety</a>
+          <a href="#">Support</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <button
+          type="button"
+          class="text-black bg-white border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+        >
+          Open Discord
+        </button>
+      </div>
+    </nav>
+    <section class="bg-myblue h-[70%]"></section>
+  </body>
+</html>
