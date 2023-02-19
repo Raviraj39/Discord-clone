@@ -1,249 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Discord | Your Place to Talk and Hang Out</title>
+    <style>
+        .fontsize {
+            font-family: "Anton", sans-serif;
+        }
+    </style>
     <script>
-      tailwind.config = {
-        theme: {
-          screens: {
-            sm: "640px",
-            md: "768px",
-            lg: "1024px",
-            xl: "1280px",
-          },
-          extend: {
-            colors: {
-              myblue: "#404EED",
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "640px",
+                    md: "768px",
+                    lg: "1024px",
+                    xl: "1280px",
+                },
+                extend: {
+                    colors: {
+                        myblue: "#404EED",
+                        mygray: "#F7F7F6",
+                        mynew: "#7983F5",
+                    },
+                    fontFamily: {
+                        'anton': ['Anton', 'sans - serif']
+                    },
+                },
             },
-          },
-        },
-      };
+        };
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <nav class="relative mx-auto p-5 h-[20%] bg-myblue">
-      <div class="flex items-center justify-around">
-        <div class="w-50">
-          <img
-            class="h-4 mr-2 sm:h-9"
-            src="./Assets/images/logo.png"
-            alt="logo"
-          />
-        </div>
-        <div
-          class="hidden md:flex space-x-6 font-sans font-semibold text-sm text-white"
-        >
-          <a href="#">Download</a>
-          <a href="#">Nitro</a>
-          <a href="#">Discover</a>
-          <a href="#">Safety</a>
-          <a href="#">Support</a>
-          <a href="#">Blog</a>
-          <a href="#">Careers</a>
-        </div>
-        <button
-          type="button"
-          class="text-black bg-white border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
-        >
+        <div class="flex items-center justify-around">
+            <div class="w-50">
+                <img class="h-4 mr-2 sm:h-9" src="./Assets/images/logo.png" alt="logo" />
+            </div>
+            <div class="hidden md:flex space-x-6 font-sans font-semibold text-sm text-white">
+                <a href="#">Download</a>
+                <a href="#">Nitro</a>
+                <a href="#">Discover</a>
+                <a href="#">Safety</a>
+                <a href="#">Support</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+            </div>
+            <button type="button" class="text-black bg-white border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">
           Open Discord
         </button>
-      </div>
+        </div>
     </nav>
-    <section class="bg-myblue h-[70vh]">
-      <div class="">
-        <h1>IMAGINE A PLACE...</h1>
-        <p class="font-mono">
-          ...where you can belong to a school club, a gaming group, or a
-          worldwide art community. Where just you and a handful of friends can
-          spend time together. A place that makes it easy to talk every day and
-          hang out more often.
-        </p>
-        <button
-          type="button"
-          class="text-black bg-white border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2"
-        >
-          Download for Windows
-        </button>
-        <button
-          type="button"
-          class="text-white bg-black focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2"
-        >
-          Open Discord in your browser
-        </button>
-      </div>
-      <div class="">
-        <img src="./assets/images/main-bg.svg" alt="" class="" />
-        <img src="./assets/images/main-image-1.svg" alt="" class="" />
-        <img src="./assets/images/main-image-2.svg" alt="" class="" />
-      </div>
-    </section>
-    <div class="main-section">
-      <section>
-        <div class="image">
-          <img src="./assets/images/section-image-1.svg" alt="" />
+    <section class="bg-myblue bg-cover  py-0 flex flex-col items-center justify-center" style="background-image: url(./assets/images/main-bg.svg)">
+        <div class="absolute">
+            <div class="text-center  z-20 ">
+                <h1 class="text-5xl font-sans font-black  text-white mt-2 mb-8">
+                    IMAGINE A PLACE...
+                </h1>
+                <p class="fontsize font-mono text-white font-sans text-lg mb-8">
+                    ...where you can belong to a school club, a gaming group, or a worldwide art community. <br /> just you and a handful of friends can spend time together. A place that makes it easy <br /> to talk every day and hang out more often.
+                </p>
+                <div class="">
+                    <button type="button" class="text-black bg-white border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-[40px] text-xl px-5 py-4 mr-2 mb-2">
+              Download for Windows
+            </button>
+                    <button type="button" class="text-white bg-black focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-[40px] text-xl px-5 py-4 mr-2 mb-2">
+              Open Discord in your browser
+            </button>
+                </div>
+            </div>
         </div>
-        <div class="container">
-          <h2>Create an invite-only place where you belong</h2>
-          <p>
-            Discord servers are organized into topic-based channels where you
-            can collaborate, share, and just talk about your day without
-            clogging up a group chat.
-          </p>
-        </div>
-      </section>
+        <div class="block w-[100%]  overflow-x-hidden mt-40 ">
 
-      <section>
-        <div class="image">
-          <h2>Where hanging out is easy</h2>
-          <p>
-            Grab a seat in a voice channel when you’re free. Friends in your
-            server can see you’re around and instantly pop in to talk without
-            having to call.
-          </p>
+            <img src="./assets/images/main-image-1.svg" alt="left" class="float-left ml-[-280px]" />
+            <img src="./assets/images/main-image-2.svg" alt="right" class="float-right mr-[-180px] 		" />
         </div>
-        <div class="container">
-          <img src="./assets/images/section-image-2.svg" alt="" />
-        </div>
-      </section>
-      <section>
-        <div class="image">
-          <img src="./assets/images/section-image-3.svg" alt="" />
-        </div>
-        <div class="container">
-          <h2>From few to a fandom</h2>
-          <p>
-            Get any community running with moderation tools and custom member
-            access. Give members special powers, set up private channels, and
-            more.
-          </p>
-        </div>
-      </section>
+    </section>
+    <div class="main-section  flex flex-col	my-[150px] mx-[100px]">
+        <section class="flex flex-row p-8 justify-around   ">
+            <div class="image  h-[100%]">
+                <img src="./assets/images/section-image-1.svg" alt="section1" />
+            </div>
+            <div class="container w-[50vh]">
+                <h2 class="text-black font-extrabold text-[40px] tracking-wider	leading-normal ">Create an invite-only place where you belong</h2>
+                <p class="text-[20px] mt-4">
+                    Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.
+                </p>
+            </div>
+        </section>
+
+        <section class="flex flex-row p-8 justify-around py-[100px] px-10 ml-[100px]  ">
+            <div class="image w-[50%] ">
+                <h2 class="text-black font-extrabold text-[40px] tracking-wider	leading-normal">Where hanging <br/> is easy</h2>
+                <p class="text-[20px] mt-4">
+                    Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.
+                </p>
+            </div>
+            <div class="container h-[100%] ml-[100px] ">
+                <img src="./assets/images/section-image-2.svg" alt="section2" height="100%" />
+            </div>
+        </section>
+        <section class="flex flex-row p-8 justify-around py-[100px] px-10">
+            <div class="image h-[100%]">
+                <img src="./assets/images/section-image-3.svg" alt="section3" />
+            </div>
+            <div class="container w-[50vh]">
+                <h2 class="text-black font-extrabold text-[40px] tracking-wider	leading-normal">From few to a fandom</h2>
+                <p class="text-[20px] mt-4">
+                    Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.
+                </p>
+            </div>
+        </section>
     </div>
 
-    <section>
-      <div class="header">
-        <h3>RELIABLE TECH FOR STAYING CLOSE</h3>
-        <p>
-          Low-latency voice and video feels like you’re in the same room. Wave
-          hello over video, watch friends stream their games, or gather up and
-          have a drawing session with screen share.
-        </p>
-      </div>
-      <div class="imagebig">
-        <img src="./assets/images/last-image.svg" alt="" />
-      </div>
-      <div>
-        <img src="./assets/images/ready-bg-image.svg" alt="" />
-        <h2>Ready to start your journey?</h2>
-      </div>
-      <button
-        type="button"
-        class="text-black bg-white border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2"
-      >
+    <section class="flex flex-col justify-center text-center bg-mygray items-center my-[150px]  ">
+        <div class=" mt-[100px] ">
+            <h3 class="text-[50px] font-extrabold font-anton">RELIABLE TECH FOR STAYING CLOSE</h3>
+            <p class="text-[20px] text-center justify-center px-[300px]">
+                Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.
+            </p>
+        </div>
+        <div class="w-[80%] mb-[60px]">
+            <img src="./assets/images/last-image.svg" alt="last" width="100%" />
+        </div>
+        <div class="">
+            <img src="./assets/images/ready-bg-image.svg" alt="" />
+            <h2 class="text-2xl font-bold mb-[50px]	">Ready to start your journey?</h2>
+        </div>
+        <button type="button" class="text-white bg-mynew border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-[40px] text-lg px-4 py-4 mr-2 mb-2 mb-[100px]">
         Download for Windows
       </button>
     </section>
     <footer>
-      <div class="footer">
-        <div class="header">
-          <h3>IMAGINE A PLACE</h3>
-          <img src="./assets/images/Us-flag.png" alt="" /> English
-          <img src="./assets/images/bg.svg" alt="" />
-        </div>
+        <div class="footer">
+            <div class="header">
+                <h3>IMAGINE A PLACE</h3>
+                <img src="./assets/images/Us-flag.png" alt="" /> English
+                <img src="./assets/images/bg.svg" alt="" />
+            </div>
 
-        <div class="all-footer-links">
-          <div class="footer-links left-links">
-            <ul>
-              <li>
-                <h4>Product</h4>
-              </li>
-              <li class="links"><a href="#">Download</a></li>
-              <li class="links"><a href="#">Nitro</a></li>
-              <li class="links"><a href="#">Status</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <ul>
-              <li>
-                <h4>Company</h4>
-              </li>
-              <li class="links"><a href="#">About</a></li>
-              <li class="links"><a href="#">Jobs</a></li>
-              <li class="links"><a href="#">Branding</a></li>
-              <li class="links"><a href="#">Newsroom</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <ul>
-              <li>
-                <h4>Resources</h4>
-              </li>
-              <li class="links"><a href="#">Product Support</a></li>
-              <li class="links"><a href="#">Request Demo</a></li>
-              <li class="links"><a href="#">Library</a></li>
-              <li class="links"><a href="#">Business Blog</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <ul>
-              <li>
-                <h4>Company</h4>
-              </li>
-              <li class="links"><a href="#">About Us</a></li>
-              <li class="links"><a href="#">Press</a></li>
-              <li class="links"><a href="#">Investors</a></li>
-              <li class="links"><a href="#">Events</a></li>
-            </ul>
-          </div>
-          <div class="footer-links right-links">
-            <ul>
-              <li>
-                <h4>Resources</h4>
-              </li>
-              <li class="links"><a href="#">College</a></li>
-              <li class="links"><a href="#">Support</a></li>
-              <li class="links"><a href="#">Safety</a></li>
-              <li class="links"><a href="#">Blog</a></li>
-              <li class="links"><a href="#">Feedback</a></li>
-              <li class="links"><a href="#">Developers</a></li>
-              <li class="links"><a href="#">StreamKit</a></li>
-              <li class="links"><a href="#">Creators</a></li>
-              <li class="links"><a href="#">Community</a></li>
-            </ul>
-          </div>
+            <div class="all-footer-links">
+                <div class="footer-links left-links">
+                    <ul>
+                        <li>
+                            <h4>Product</h4>
+                        </li>
+                        <li class="links"><a href="#">Download</a></li>
+                        <li class="links"><a href="#">Nitro</a></li>
+                        <li class="links"><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li>
+                            <h4>Company</h4>
+                        </li>
+                        <li class="links"><a href="#">About</a></li>
+                        <li class="links"><a href="#">Jobs</a></li>
+                        <li class="links"><a href="#">Branding</a></li>
+                        <li class="links"><a href="#">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li>
+                            <h4>Resources</h4>
+                        </li>
+                        <li class="links"><a href="#">Product Support</a></li>
+                        <li class="links"><a href="#">Request Demo</a></li>
+                        <li class="links"><a href="#">Library</a></li>
+                        <li class="links"><a href="#">Business Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li>
+                            <h4>Company</h4>
+                        </li>
+                        <li class="links"><a href="#">About Us</a></li>
+                        <li class="links"><a href="#">Press</a></li>
+                        <li class="links"><a href="#">Investors</a></li>
+                        <li class="links"><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links right-links">
+                    <ul>
+                        <li>
+                            <h4>Resources</h4>
+                        </li>
+                        <li class="links"><a href="#">College</a></li>
+                        <li class="links"><a href="#">Support</a></li>
+                        <li class="links"><a href="#">Safety</a></li>
+                        <li class="links"><a href="#">Blog</a></li>
+                        <li class="links"><a href="#">Feedback</a></li>
+                        <li class="links"><a href="#">Developers</a></li>
+                        <li class="links"><a href="#">StreamKit</a></li>
+                        <li class="links"><a href="#">Creators</a></li>
+                        <li class="links"><a href="#">Community</a></li>
+                    </ul>
+                </div>
 
-          <div class="footer-links right-links">
-            <ul>
-              <li>
-                <h4>Polices</h4>
-              </li>
-              <li class="links"><a href="#">Terms</a></li>
-              <li class="links"><a href="#">Privacy</a></li>
-              <li class="links"><a href="#">Cookie Settings</a></li>
-              <li class="links"><a href="#">Guidelines</a></li>
-              <li class="links"><a href="#">Acknowledgements</a></li>
-              <li class="links"><a href="#">Licenses</a></li>
-              <li class="links"><a href="#">Moderation</a></li>
-            </ul>
-          </div>
-        </div>
-        <div></div>
-        <div class="footer-logo">
-          <img src="./assets/images/logo.png" alt="" />
-          <button
-            type="button"
-            class="text-white bg-myblue border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2"
-          >
+                <div class="footer-links right-links">
+                    <ul>
+                        <li>
+                            <h4>Polices</h4>
+                        </li>
+                        <li class="links"><a href="#">Terms</a></li>
+                        <li class="links"><a href="#">Privacy</a></li>
+                        <li class="links"><a href="#">Cookie Settings</a></li>
+                        <li class="links"><a href="#">Guidelines</a></li>
+                        <li class="links"><a href="#">Acknowledgements</a></li>
+                        <li class="links"><a href="#">Licenses</a></li>
+                        <li class="links"><a href="#">Moderation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div></div>
+            <div class="footer-logo">
+                <img src="./assets/images/logo.png" alt="" />
+                <button type="button" class="text-white bg-myblue border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2">
             Download
           </button>
+            </div>
         </div>
-      </div>
     </footer>
-  </body>
+</body>
+
 </html>
