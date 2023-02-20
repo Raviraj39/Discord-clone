@@ -20,7 +20,7 @@ Our Frontend Website is designed to give beautiful UI , with featuers such as ou
 
 ## Output
 
-![veide](./assets/images/video-to-gif.gif)
+![veide](assets/images/video-to-gif.gif)
 
 ### Live at
 

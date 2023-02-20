@@ -14,14 +14,15 @@
 
     <title>Discord | Your Place to Talk and Hang Out</title>
     <style>
-        .fontsize {
-            font-family: "Anton", sans-serif;
+         :root {
+            --font-headline: "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
         }
     </style>
     <script>
         tailwind.config = {
             theme: {
                 screens: {
+                    m: "320px",
                     sm: "640px",
                     md: "768px",
                     lg: "1024px",
@@ -37,6 +38,7 @@
                     },
                     fontFamily: {
                         'anton': ['Anton', 'sans - serif']
+
                     },
                 },
             },
@@ -46,20 +48,20 @@
 
 <body>
     <nav class="relative mx-auto p-5 h-[20%] bg-myblue">
-        <div class="flex items-center justify-around">
-            <div class="w-50">
-                <img class="h-4 mr-2 sm:h-9" src="./assets/images/logo.png" alt="logo" />
+        <div class="flex items-center justify-around ">
+            <div class="w-50 ">
+                <img class="h-4 mr-2 sm:h-9  " src="./assets/images/logo.png" alt="logo" />
             </div>
-            <div class="hidden md:flex space-x-6 font-sans font-semibold text-sm text-white">
-                <a href="#">Download</a>
-                <a href="#">Nitro</a>
-                <a href="#">Discover</a>
-                <a href="#">Safety</a>
-                <a href="#">Support</a>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
+            <div class="hidden  md:block md:w-auto md:flex space-x-6 font-sans font-semibold text-sm text-white">
+                <a class="hover:underline" href="#">Download</a>
+                <a class="hover:underline" href="#">Nitro</a>
+                <a class="hover:underline" href="#">Discover</a>
+                <a class="hover:underline" href="#">Safety</a>
+                <a class="hover:underline" href="#">Support</a>
+                <a class="hover:underline" href="#">Blog</a>
+                <a class="hover:underline" href="#">Careers</a>
             </div>
-            <button type="button" class="text-black bg-white border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">
+            <button type="button" class="text-black bg-white border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 m:text-m">
           Open Discord
         </button>
         </div>
@@ -67,13 +69,13 @@
     <section class="bg-myblue bg-cover  py-0 flex flex-col items-center justify-center" style="background-image: url(./assets/images/main-bg.svg)">
         <div class="absolute">
             <div class="text-center  z-20 ">
-                <h1 class="text-5xl font-sans font-black  text-white mt-2 mb-8">
+                <h1 class="text-5xl font-sans font-black text-white mt-2 mb-8 min-m:text-lg" style="font-family: var(--font-headline);">
                     IMAGINE A PLACE...
                 </h1>
-                <p class="fontsize font-mono text-white font-sans text-lg mb-8">
+                <p class=" font-mono text-white font-sans text-lg mb-8 m:text-xs sm:text-lg lg:text-xl md:flex md:shrink-0 max-m:py-8">
                     ...where you can belong to a school club, a gaming group, or a worldwide art community. <br /> just you and a handful of friends can spend time together. A place that makes it easy <br /> to talk every day and hang out more often.
                 </p>
-                <div class="flex flex-row items-center justify-center">
+                <div class="md:flex flex-row items-center justify-center ">
                     <button type="button" class="flex flex-row text-black bg-white border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-[30px] text-base px-5 py-4 mr-2 mb-2">
                         <img src="./assets/images/download.png" alt="download" width="30px">Download for Windows
                      </button>
@@ -83,152 +85,152 @@
                 </div>
             </div>
         </div>
-        <div class="block w-[100%]  overflow-x-hidden mt-40 ">
+        <div class="block w-[100%]  overflow-x-hidden mt-40  ">
 
-            <img src="./assets/images/main-image-1.svg" alt="left" class="float-left ml-[-280px]" />
-            <img src="./assets/images/main-image-2.svg" alt="right" class="float-right mr-[-180px] 		" />
+            <img src="./assets/images/main-image-1.svg" alt="left" class="float-left ml-[-280px] sm:overflow-hidden max-sm:hidden  " />
+            <img src="./assets/images/main-image-2.svg" alt="right" class="float-right mr-[-180px]	max-sm:flex-col	" />
         </div>
     </section>
-    <div class="main-section  flex flex-col	my-[150px] mx-[100px]">
-        <section class="flex flex-row p-8 justify-around   ">
-            <div class="image  h-[100%]">
-                <img src="./assets/images/section-image-1.svg" alt="section1" />
+    <div class="main-section  flex flex-col	my-[150px] mx-[100px] max-sm:my-0 max-sm:mx-0">
+        <section class="flex flex-row p-8 justify-around  max-sm:flex-col  ">
+            <div class="h-[100%] ">
+                <img src="./assets/images/section-image-1.svg" alt="section1" class="" />
             </div>
             <div class="container w-[50vh]">
-                <h2 class="text-black font-extrabold text-[40px] tracking-wider	leading-normal ">Create an invite-only place where you belong</h2>
-                <p class="text-[20px] mt-4">
+                <h2 class="text-black font-extrabold text-[40px] tracking-wider	leading-normal max-sm:text-2xl ">Create an invite-only place where you belong</h2>
+                <p class="text-[20px] mt-4   ">
                     Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.
                 </p>
             </div>
         </section>
 
-        <section class="flex flex-row p-8 justify-around py-[100px] px-10 ml-[100px]  ">
+        <section class="flex flex-row p-8 justify-around py-[100px] px-10 ml-[100px] max-sm:px-4 py-4 flex-col max-sm:ml-0 ">
             <div class="image w-[50%] ">
                 <h2 class="text-black font-extrabold text-[40px] tracking-wider	leading-normal">Where hanging <br/> is easy</h2>
                 <p class="text-[20px] mt-4">
                     Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.
                 </p>
             </div>
-            <div class="container h-[100%] ml-[100px] ">
-                <img src="./assets/images/section-image-2.svg" alt="section2" height="100%" />
+            <div class="container h-[100%] ml-[100px] max-sm:ml-0 ">
+                <img src="./assets/images/section-image-2.svg " alt="section2 " height="100% " />
             </div>
         </section>
-        <section class="flex flex-row p-8 justify-around py-[100px] px-10">
-            <div class="image h-[100%]">
-                <img src="./assets/images/section-image-3.svg" alt="section3" />
+        <section class="flex flex-row p-8 justify-around py-[100px] px-10 max-sm:flex-col py-8 ">
+            <div class="image h-[100%] ">
+                <img src="./assets/images/section-image-3.svg " alt="section3 " />
             </div>
-            <div class="container w-[50vh]">
-                <h2 class="text-black font-extrabold text-[40px] tracking-wider	leading-normal">From few to a fandom</h2>
-                <p class="text-[20px] mt-4">
+            <div class="container w-[50vh] ">
+                <h2 class="text-black font-extrabold text-[40px] tracking-wider leading-normal max-sm:text-2xl ">From few to a fandom</h2>
+                <p class="text-[20px] mt-4 ">
                     Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.
                 </p>
             </div>
         </section>
     </div>
 
-    <section class="flex flex-col justify-center text-center bg-mygray items-center mt-[150px]  ">
+    <section class="flex flex-col justify-center text-center bg-mygray items-center mt-[150px] ">
         <div class=" mt-[100px] ">
-            <h3 class="text-[50px] font-extrabold font-anton">RELIABLE TECH FOR STAYING CLOSE</h3>
-            <p class="text-[20px] text-center justify-center px-[300px]">
+            <h3 class="text-[50px] font-extrabold font-anton ">RELIABLE TECH FOR STAYING CLOSE</h3>
+            <p class="text-[20px] text-center justify-center px-[300px] ">
                 Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.
             </p>
         </div>
-        <div class="w-[80%] mb-[60px]">
-            <img src="./assets/images/last-image.svg" alt="last" width="100%" />
+        <div class="w-[80%] mb-[60px] ">
+            <img src="./assets/images/last-image.svg " alt="last " width="100% " />
         </div>
-        <div class="">
-            <img src="./assets/images/ready-bg-image.svg" alt="" />
-            <h2 class="text-2xl font-bold mb-[50px]	">Ready to start your journey?</h2>
+        <div class=" ">
+            <img src="./assets/images/ready-bg-image.svg " alt=" " />
+            <h2 class="text-2xl font-bold mb-[50px] ">Ready to start your journey?</h2>
         </div>
-        <button type="button" class="flex flex-row text-white bg-mynew border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-[40px] text-lg px-4 py-4 mr-2 mb-2 mb-[100px]">
-       <img src="./assets/images/white-download.png" alt="white-download" width="30px"> Download for Windows
+        <button type="button " class="flex flex-row text-white bg-mynew border focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-[40px] text-lg px-4 py-4 mr-2 mb-2 mb-[100px] ">
+       <img src="./assets/images/white-download.png " alt="white-download " width="30px "> Download for Windows
       </button>
     </section>
-    <footer class="bg-myfooter pt-[100px] px-[100px] pb-[20px]">
-        <div class="footer flex ">
+    <footer class="bg-myfooter pt-[100px] px-[100px] pb-[20px] ">
+        <div class="footer flex max-sm:grid grid-rows-2 ">
             <div class="flex flex-col mr-[100px] ">
-                <h3 class="text-myfooterblue text-3xl font-black mb-4">IMAGINE A <br/>PLACE</h3>
-                <div class="flex flex-row gap-2 text-white mb-4">
-                    <img src="./assets/images/Us-flag.png" alt="us-flag" width="40px" /> English, USA
-                    <img src="./assets/images/bg.svg" alt="arrow" class="w-3 h-2 mt-3" />
+                <h3 class="text-myfooterblue text-3xl font-black mb-4 ">IMAGINE A <br/>PLACE</h3>
+                <div class="flex flex-row gap-2 text-white mb-4 ">
+                    <img src="./assets/images/Us-flag.png " alt="us-flag " width="40px " /> English, USA
+                    <img src="./assets/images/bg.svg " alt="arrow " class="w-3 h-2 mt-3 " />
                 </div>
-                <div class="flex flex-row gap-3">
-                    <a href="#"><img src="./assets/images/twitter.png" alt="twitter"></a>
-                    <a href="#"><img src="./assets/images/instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="./assets/images/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="./assets/images/youtube.png" alt="youtube"></a>
+                <div class="flex flex-row gap-3 ">
+                    <a href="# "><img src="./assets/images/twitter.png " alt="twitter "></a>
+                    <a href="# "><img src="./assets/images/instagram.png " alt="instagram "></a>
+                    <a href="# "><img src="./assets/images/facebook.png " alt="facebook "></a>
+                    <a href="# "><img src="./assets/images/youtube.png " alt="youtube "></a>
                 </div>
             </div>
-            <div class="grid grid-cols-4 gap-[80px] ml-[80px]  ">
-                <div class="flex">
+            <div class="grid grid-cols-4 gap-[80px] ml-[80px]   gap-10 ml-0">
+                <div class="flex  max-sm:grid grid-rows-2">
                     <ul>
                         <li>
-                            <h4 class="text-myfooterblue text-lg font-normal">Product</h4>
+                            <h4 class="text-myfooterblue text-lg font-normal ">Product</h4>
                         </li>
                         <div class="text-white text-base font-normal py-4 ">
-                            <li class="hover:underline"><a href="#">Download</a></li>
-                            <li class="hover:underline"><a href="#">Nitro</a></li>
-                            <li class="hover:underline"><a href="#">Status</a></li>
+                            <li class="hover:underline "><a href="# ">Download</a></li>
+                            <li class="hover:underline "><a href="# ">Nitro</a></li>
+                            <li class="hover:underline "><a href="# ">Status</a></li>
                         </div>
                     </ul>
                 </div>
-                <div class="flex">
+                <div class="flex ">
                     <ul>
                         <li>
-                            <h4 class="text-myfooterblue text-lg font-normal">Company</h4>
+                            <h4 class="text-myfooterblue text-lg font-normal ">Company</h4>
                         </li>
                         <div class="text-white text-base font-normal py-4 ">
-                            <li class="hover:underline"><a href="#">About</a></li>
-                            <li class="hover:underline"><a href="#">Jobs</a></li>
-                            <li class="hover:underline"><a href="#">Branding</a></li>
-                            <li class="hover:underline"><a href="#">Newsroom</a></li>
+                            <li class="hover:underline "><a href="# ">About</a></li>
+                            <li class="hover:underline "><a href="# ">Jobs</a></li>
+                            <li class="hover:underline "><a href="# ">Branding</a></li>
+                            <li class="hover:underline "><a href="# ">Newsroom</a></li>
                         </div>
                     </ul>
                 </div>
 
 
-                <div class="flex">
+                <div class="flex ">
                     <ul>
                         <li>
-                            <h4 class="text-myfooterblue text-lg font-normal">Resources</h4>
+                            <h4 class="text-myfooterblue text-lg font-normal ">Resources</h4>
                         </li>
-                        <div class="text-white text-base font-normal py-4  ">
-                            <li class="hover:underline"><a href="#">College</a></li>
-                            <li class="hover:underline"> <a href="#">Support</a></li>
-                            <li class="hover:underline"><a href="#">Safety</a></li>
-                            <li class="hover:underline"><a href="#">Blog</a></li>
-                            <li class="hover:underline"><a href="#">Feedback</a></li>
-                            <li class="hover:underline"><a href="#">Developers</a></li>
-                            <li class="hover:underline"><a href="#">StreamKit</a></li>
-                            <li class="hover:underline"><a href="#">Creators</a></li>
-                            <li class="hover:underline"><a href="#">Community</a></li>
+                        <div class="text-white text-base font-normal py-4 ">
+                            <li class="hover:underline "><a href="# ">College</a></li>
+                            <li class="hover:underline "> <a href="# ">Support</a></li>
+                            <li class="hover:underline "><a href="# ">Safety</a></li>
+                            <li class="hover:underline "><a href="# ">Blog</a></li>
+                            <li class="hover:underline "><a href="# ">Feedback</a></li>
+                            <li class="hover:underline "><a href="# ">Developers</a></li>
+                            <li class="hover:underline "><a href="# ">StreamKit</a></li>
+                            <li class="hover:underline "><a href="# ">Creators</a></li>
+                            <li class="hover:underline "><a href="# ">Community</a></li>
                         </div>
                     </ul>
                 </div>
 
-                <div class="flex">
+                <div class="flex ">
                     <ul>
                         <li>
-                            <h4 class="text-myfooterblue text-lg font-normal">Polices</h4>
+                            <h4 class="text-myfooterblue text-lg font-normal ">Polices</h4>
                         </li>
-                        <div class="text-white text-base font-normal py-4  ">
-                            <li class="hover:underline"><a href="#">Terms</a></li>
-                            <li class="hover:underline"><a href="#">Privacy</a></li>
-                            <li class="hover:underline"><a href="#">Cookie Settings</a></li>
-                            <li class="hover:underline"><a href="#">Guidelines</a></li>
-                            <li class="hover:underline"><a href="#">Acknowledgements</a></li>
-                            <li class="hover:underline"><a href="#">Licenses</a></li>
-                            <li class="hover:underline"><a href="#">Moderation</a></li>
+                        <div class="text-white text-base font-normal py-4 ">
+                            <li class="hover:underline "><a href="# ">Terms</a></li>
+                            <li class="hover:underline "><a href="# ">Privacy</a></li>
+                            <li class="hover:underline "><a href="# ">Cookie Settings</a></li>
+                            <li class="hover:underline "><a href="# ">Guidelines</a></li>
+                            <li class="hover:underline "><a href="# ">Acknowledgements</a></li>
+                            <li class="hover:underline "><a href="# ">Licenses</a></li>
+                            <li class="hover:underline "><a href="# ">Moderation</a></li>
                         </div>
                     </ul>
                 </div>
             </div>
         </div>
-        <hr class="opacity-40 mt-12 ml-[0px] mr-[0px] bg-myfooterblue">
-        <div class="flex flex-row justify-between mt-8">
-            <a href="#"> <img src="./assets/images/logo.png" alt="logo" width="180px" />
+        <hr class="opacity-40 mt-12 ml-[0px] mr-[0px] bg-myfooterblue ">
+        <div class="flex flex-row justify-between mt-8 ">
+            <a href="# "> <img src="./assets/images/logo.png " alt="logo " width="180px " />
             </a>
-            <button type="button" class="text-white bg-myblue font-lg rounded-[30px] text-lg px-5 py-2.5 mr-2 mb-2">
+            <button type="button " class="text-white bg-myblue font-lg rounded-[30px] text-lg px-5 py-2.5 mr-2 mb-2 ">
             Open Discord
           </button>
         </div>
