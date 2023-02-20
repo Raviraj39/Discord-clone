@@ -19,8 +19,9 @@
 Our Frontend Website is designed to give beautiful UI , with featuers such as our Nav section, main section and Attractive UI.Build with HTML and Tailwind, Our Website is Userfriendly and Responsive in all device.
 
 ## Output
+![veide](./assets/images/video-to-gif.gif)
 
-![veide](assets/images/video-to-gif.gif)
+
 
 ### Live at
 
