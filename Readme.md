@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./assets/images/logo.png" width=200px/>
+<img src="../Discord-Clone/assets/images/logo.png" width=200px/>
 <h4>The Dicord Home Page</h4>
 <br>
 
