@@ -1,6 +1,6 @@
 <div align="center">
-<img src="../Discord-Clone/assets/images/logo.png" width=200px/>
-<h4>The Dicord Home Page</h4>
+<img src="./assets/images/logo.png" width=200px/>
+<h4>The Discord Home Page</h4>
 <br>
 
 [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://html.com/ "HTML")
